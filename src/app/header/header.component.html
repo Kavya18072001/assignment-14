@@ -1,0 +1,12 @@
+
+<div class="header">
+    <div class="padding">
+<span>Title:</span>
+ <app-input [placeholderfromheader] ="name"  (childToParent)="handleName($event)"></app-input>
+ </div>
+ <div class="padding">
+ <span>Description:</span>
+<app-input [placeholderfromheader]="description" (childToParent)="handleDesc($event)"></app-input>
+</div>
+<button (click)="handleClick()">ADD</button>
+</div>
